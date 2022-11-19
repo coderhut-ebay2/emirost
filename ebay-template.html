@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>eBay Template</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- .header: Logo und oben angeordnete Shop-Merkmale -->
+            <div class="header">
+                <div class="logoContainer">
+                    <!-- Logo Bildquelle -->
+                    <img src="img/logo.jpg" />
+                </div>
+
+                <!-- Navigation zu Shopseiten -->
+                <div class="navigationContainer">
+                    <ul>
+                        <li>
+                            <a
+                                href="https://stores.ebay.de/SHOBBEPFALZ"
+                                target="_blank"
+                                >Zum Shop</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://feedback.ebay.de/ws/eBayISAPI.dll?ViewFeedback2&userid=SHOBBE-DE"
+                                target="_blank"
+                                >Bewertungen</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://my.ebay.de/ws/eBayISAPI.dll?AcceptSavedSeller&linkname=includefavoritestore&sellerid=SHOBBE-DE"
+                                target="_blank"
+                                >Favorit</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="https://my.ebay.de/ws/eBayISAPI.dll?AcceptSavedSeller&sellerid=SHOBBE-DE&ssPageName=STRK:MEFS:ADDSTR&rt=nc"
+                                target="_blank"
+                                >Newsletter</a
+                            >
+                        </li>
+                    </ul>
+                    <!-- .navigationContainer ENDE !-->
+                </div>
+                <!-- .header ENDE !-->
+            </div>
+            <!-- .upperBody: Sämtlicher Inhalt unter dem Header & über der TabBar -->
+            <div class="upperBody">
+                <div class="galleryAndShortdescriptionContainer">
+                    <!-- Beginn der Galerie. Falls Sie Bilder manuell in den Code einfügen wollen, muss dies an zwei Stellen pro Bild geschehen. Ein Mal innerhalb des <img>-Tags in der <a> mit der Klasse .bigPic. Und ein zweites Mal im zugehörigen <img>-Tag im <label> mit der Klasse .galleryThumb -->
+                    <div class="gallery">
+                        <label
+                            for="big-pic-1"
+                            class="galleryThumb control-item controls"
+                        >
+                            <img
+                                src="https://i.ebayimg.com/images/g/mQMAAOSwlK5jdOJd/s-l1600.png"
+                            />
+                        </label>
+                        <input
+                            checked=""
+                            type="radio"
+                            class="hidden-pic-input"
+                            id="big-pic-1"
+                            name="gallery-radio-buttons"
+                        />
+                        <label
+                            for="big-pic-2"
+                            class="galleryThumb control-item controls"
+                        >
+                            <img
+                                src="https://i.ebayimg.com/images/g/82UAAOSwFN1jdOJc/s-l1600.png"
+                            />
+                        </label>
+                        <input
+                            type="radio"
+                            class="hidden-pic-input"
+                            id="big-pic-2"
+                            name="gallery-radio-buttons"
+                        />
+                        <label
+                            for="big-pic-3"
+                            class="galleryThumb control-item controls"
+                        >
+                            <img
+                                src="https://i.ebayimg.com/images/g/M4AAAOSwRx1jdOJd/s-l1600.png"
+                            />
+                        </label>
+                        <input
+                            type="radio"
+                            class="hidden-pic-input"
+                            id="big-pic-3"
+                            name="gallery-radio-buttons"
+                        />
+                        <a class="bigPic" href="#zoompic-1">
+                            <img
+                                src="https://i.ebayimg.com/images/g/mQMAAOSwlK5jdOJd/s-l1600.png"
+                            />
+                        </a>
+                        <a class="bigPic" href="#zoompic-2">
+                            <img
+                                src="https://i.ebayimg.com/images/g/82UAAOSwFN1jdOJc/s-l1600.png"
+                            />
+                        </a>
+                        <a class="bigPic" href="#zoompic-3">
+                            <img
+                                src="https://i.ebayimg.com/images/g/M4AAAOSwRx1jdOJd/s-l1600.png"
+                            />
+                        </a>
+                        <div id="zoompic-1" class="overlay">
+                            <div class="zoom-bigPic">
+                                <a href="#item-1" class="ui-close-link"
+                                    ><i class="fa fa-close"></i
+                                ></a>
+                                <img
+                                    src="https://i.ebayimg.com/images/g/mQMAAOSwlK5jdOJd/s-l1600.png"
+                                    style="display: inline"
+                                /><a
+                                    href="#item-1"
+                                    class="close-text"
+                                    target="_blank"
+                                    >Zoomansicht schließen</a
+                                >
+                            </div>
+                        </div>
+                        <div id="zoompic-2" class="overlay">
+                            <div class="zoom-bigPic">
+                                <a href="#item-2" class="ui-close-link"
+                                    ><i class="fa fa-close"></i
+                                ></a>
+                                <img
+                                    src="https://i.ebayimg.com/images/g/82UAAOSwFN1jdOJc/s-l1600.png"
+                                    style="display: inline"
+                                /><a
+                                    href="#item-2"
+                                    class="close-text"
+                                    target="_blank"
+                                    >Zoomansicht schließen</a
+                                >
+                            </div>
+                        </div>
+                        <div id="zoompic-3" class="overlay">
+                            <div class="zoom-bigPic">
+                                <a href="#item-3" class="ui-close-link"
+                                    ><i class="fa fa-close"></i
+                                ></a>
+                                <img
+                                    src="https://i.ebayimg.com/images/g/M4AAAOSwRx1jdOJd/s-l1600.png"
+                                    style="display: inline"
+                                /><a
+                                    href="#item-3"
+                                    class="close-text"
+                                    target="_blank"
+                                    >Zoomansicht schließen</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .midColumn: Mittlere Spalte (Artikelname, Kurzbeschreibung, Variationen, Preis & Buttons) -->
+                    <div class="midColumn">
+                        <!-- Artikelname als <h1>-Tag -->
+                        <h1>
+                            G-BS001 GRILLPLATTE STEAK TISCH GRILL GRILLFUNKTION
+                            MIT ÖLFILTERSYSTEM SCHWARZ
+                        </h1>
+                        <!-- .shortdescription: Kurzbeschreibungstext unter der Überschrift sowie Variationenanzeige. Die Variationen werden nicht automatisch gesetzt!-->
+                        <div class="shortdescription">
+                            <!-- .priceTagBox: Preisfeld mit Frage stellen Möglichkeit -->
+                            <div class="priceTagBox">
+                                <h2>EUR 59,00</h2>
+                                <!-- #askNowButton: Frage Stellen-Button. Link wird im Template Designer anhand Ihrer Accountdaten hinterlegt. -->
+                                <a
+                                    id="askNowButton"
+                                    href="https://contact.ebay.de/ws/eBayISAPI.dll?ShowSellerFAQ&iid=334630276661&requested=shobbe-de&redirect=0&frm=284&rt=nc&ssPageName=PageSellerM2MFAQ_VI&_trksid=p2047675.m145687.l149087"
+                                    target="_blank"
+                                >
+                                    <div class="innerbox"></div>
+                                    <i class="fa fa-comments"></i>
+                                    <p>Frage stellen</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .rightColumn: Rechte Spalte (Herstellerinformationen) !-->
+                    <div class="rightColumn">
+                        <div class="brandContainer">
+                            <!-- Bildquelle Hersteller-Logo --><img
+                                src="https://pro-jex.de/ebay/1_RoboNerdk_mLaptopFrontal.png"
+                            />
+                        </div>
+                        <!-- .rightColumn ENDE !-->
+                    </div>
+                    <!-- .upperBody ENDE !-->
+                </div>
+                <div class="clearer"></div>
+                <!-- TabBar -->
+                <!-- Für eine optimale Darstellung bitte nach einem Bild im "contentImgRight"- oder "contentImgLeft"-div ein "<div class="clearer"></div>" einfügen, damit die Umfließung durch float aufgehoben wird. -->
+                <div class="tabBar">
+                    <input type="radio" checked="" name="tab" id="tab1-btn" />
+                    <label for="tab1-btn" class="tablinks"
+                        >Produktbeschreibung</label
+                    >
+                    <input type="radio" name="tab" id="tab2-btn" />
+                    <label for="tab2-btn" class="tablinks"
+                        >Technische Daten</label
+                    >
+                    <input type="radio" name="tab" id="tab3-btn" />
+                    <label for="tab3-btn" class="tablinks"
+                        >Produktkategorie</label
+                    >
+                    <div id="tab1">
+                        <div class="contentBorder">
+                            <div class="animated fadeInRight">
+                                <div class="tabContent">
+                                    <div class="row bordered">
+                                        <div
+                                            class="col-md-4 col-sm-4 col-xs-4 red title"
+                                        >
+                                            Allgemein
+                                        </div>
+                                        <div
+                                            class="col-md-8 col-sm-8 col-xs-8 value"
+                                        >
+                                            <p>Allgemein</p>
+
+                                            <h3>
+                                                G-BS001 GRILLPLATTE STEAK TISCH
+                                                GRILL GRILLFUNKTION MIT
+                                                ÖLFILTERSYSTEM SCHWARZ
+                                            </h3>
+
+                                            <p><b>NEU & OVP</b></p>
+
+                                            <p>
+                                                Zwei Grillplatten mit unabhängig
+                                                voneinander einstellbarer
+                                                Temperatur <br />
+                                                Mit manueller
+                                                Temparatureinstellung 1800 W
+                                                <br />
+                                                Mit Trockengehschutz
+                                            </p>
+
+                                            <p><b>Eigenschaften:</b></p>
+
+                                            <p>
+                                                <b>Speiseöl-Filterfunktion</b>
+                                                <br />
+                                                Herausnehmbare Ölauffangschale
+                                                für einfache Reinigung <br />
+                                                Abnehmbare Abzugshaube für
+                                                einfache Reinigung
+                                            </p>
+                                            <p><b>Lieferumfang</b></p>
+                                            <p>
+                                                Rauchloser Grill (Hauptgerät) x
+                                                1
+                                            </p>
+                                            <p>Grillplatte x 2</p>
+                                            <p>Benutzerhandbuch x 1</p>
+                                            <ul>
+                                                <li>
+                                                    <span
+                                                        style="font-size: 14px"
+                                                        ><span
+                                                            style="
+                                                                font-family: Verdana,
+                                                                    Geneva,
+                                                                    sans-serif;
+                                                            "
+                                                            >schneller Versand
+                                                            mit DHL</span
+                                                        ></span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <span
+                                                        style="font-size: 14px"
+                                                        ><span
+                                                            style="
+                                                                font-family: Verdana,
+                                                                    Geneva,
+                                                                    sans-serif;
+                                                            "
+                                                            >selbstverständlich
+                                                            Rechnung mit
+                                                            ausgewiesener
+                                                            MwSt</span
+                                                        ></span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <span
+                                                        style="font-size: 14px"
+                                                        ><span
+                                                            style="
+                                                                font-family: Verdana,
+                                                                    Geneva,
+                                                                    sans-serif;
+                                                            "
+                                                            >Service auch nach
+                                                            dem Kauf</span
+                                                        ></span
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <span
+                                                        style="font-size: 14px"
+                                                        ><span
+                                                            style="
+                                                                font-family: Verdana,
+                                                                    Geneva,
+                                                                    sans-serif;
+                                                            "
+                                                            >DEIN DEAL AUS DER
+                                                            PFALZ</span
+                                                        ></span
+                                                    >
+                                                </li>
+                                            </ul>
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab 2 -->
+                    <div id="tab2">
+                        <div class="contentBorder">
+                            <div class="animated fadeInRight">
+                                <div class="tabContent">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        EAN
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>nicht zutreffend</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        HAN
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>61B4MAT1EU</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Display
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>
+                                                            höhenverstellbar,
+                                                            24", Pivot
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Displayauflösung
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>1920 x 1200 Pixel</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Dyn. Kontrastverhältnis
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>1000:1</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Farbanzahl
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>16,7 Mio.</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Farbe
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>Schwarz</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Hersteller
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>Lenovo</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Hor. Betrachtungswinkel
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>178°</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Leistungsaufnahme (Ein)
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>22 W</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Leistungsaufnahme
+                                                        (StandBy)
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>0.5 W</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Panel-Technologie
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>IPS</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Pixel-Abstand
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>0.270 mm</p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Reaktionszeit
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>
+                                                            4 ms (Gray-to-Gray)
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Schnittstellen
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>
+                                                            1x USB 3.0 Typ-B ,
+                                                            4x USB 3.0, USB-Hub,
+                                                            HDMI, VGA,
+                                                            DisplayPort
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="attr-chracteristic">
+                                                    <td
+                                                        class="attr-label word-break"
+                                                    >
+                                                        Ver. Betrachtungswinkel
+                                                    </td>
+                                                    <td class="atrr-value">
+                                                        <p>178°</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tab 3 -->
+                    <div id="tab3">
+                        <div class="contentBorder">
+                            <div class="animated fadeInRight">
+                                <div class="tabContent">
+                                    <div class="row bordered">
+                                        <div
+                                            class="col-md-4 col-sm-4 col-xs-4 red title"
+                                        >
+                                            <p>Was bedeutet Gebrauchtware?</p>
+                                        </div>
+                                        <div
+                                            class="col-md-8 col-sm-8 col-xs-8 value"
+                                        >
+                                            <p>
+                                                Lorem, ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Quia corporis illo voluptatibus
+                                                placeat dicta, totam iure culpa
+                                                ipsa, omnis quaerat nihil
+                                                reprehenderit earum amet
+                                                necessitatibus iusto
+                                                consequuntur? Non, repellat eos?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div
+                                            class="col-md-4 col-sm-4 col-xs-4 red title"
+                                        >
+                                            <!-- Bildquelle Platzhalter-Produktkategorie -->
+                                            <div class="kategorieImg">
+                                                <img
+                                                    src="https://pro-jex.de/ebay/PJX_ICON_EBAY_Variationen.png"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-md-8 col-sm-8 col-xs-8 value"
+                                        >
+                                            <b>A Ware</b>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.
+                                                At, laboriosam unde? Hic odit
+                                                mollitia dicta eius corrupti ex
+                                                numquam deserunt repellat aut,
+                                                dolor soluta itaque cupiditate
+                                                similique ut dolores natus.
+                                            </p>
+                                            <br />
+                                            <b>A- Ware</b>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Dignissimos corrupti doloremque
+                                                minus recusandae, numquam amet
+                                                velit eveniet mollitia soluta
+                                                natus voluptas optio laborum!
+                                                Earum quisquam, voluptate quasi
+                                                quo explicabo illo.
+                                            </p>
+                                            <br />
+                                            <b>B+ Ware</b>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Ut
+                                                obcaecati saepe expedita commodi
+                                                perferendis consequatur, eaque
+                                                corporis quisquam. Architecto in
+                                                nam ab ea consequuntur amet eos
+                                                inventore, fugiat itaque magnam.
+                                            </p>
+                                            <br />
+                                            <b>B Ware</b>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Natus modi, ipsum adipisci
+                                                quisquam nostrum provident
+                                                impedit quas officia voluptas
+                                                cum aspernatur obcaecati
+                                                accusantium at veritatis quidem
+                                                itaque atque eaque optio?
+                                            </p>
+                                            <br />
+                                            <b>C Ware </b>
+                                            <p>
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Cumque a neque, sit, laudantium
+                                                rem nisi dolores ipsum nam
+                                                facere quam tempora voluptatum,
+                                                cum modi consequuntur! Modi
+                                                deleniti numquam porro ratione?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="whyChooseUs">
+                    <h2>Was uns auszeichnet</h2>
+                    <div class="whyChooseUsBlockContainer">
+                        <div class="whyChooseUsBlock1">
+                            <!-- Bildquelle Sparschwein --><img
+                                src="https://pro-jex.de/ebay/Projex_Icon_Startseite_Sparschwein.png"
+                            />
+                            <h3>Überraschend günstig.</h3>
+                            <p>Wir bieten auch Gebrauchtwaren,</p>
+                            <p>in geprüfter Qualität mit Gewährleistung.</p>
+                        </div>
+                        <div class="whyChooseUsBlock2">
+                            <!-- Bildquelle Sparschwein --><img
+                                src="https://pro-jex.de/ebay/Projex_Icon_Startseite_Versand.png"
+                            />
+
+                            <h3>Schneller Versand</h3>
+                            <p>
+                                Innerhalb von einem Werktag, nach
+                                Zahlungseingang.
+                            </p>
+                        </div>
+                        <div class="whyChooseUsBlock3">
+                            <!-- Bildquelle Sparschwein --><img
+                                src="https://pro-jex.de/ebay/Projex_Icon_Startseite_Telefon.png"
+                            />
+
+                            <h3>Persönliche Beratung</h3>
+                            <p>Montag bis Freitag 10.00-18.00 Uhr</p>
+                            <p>Tel: 000 00 00 00 00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cross Selling Reihe 1 -->
+                <!-- Cross Selling Reihe 2 -->
+                <div class="crossSellerContainer" id="csc2">
+                    <div class="crossSellerContainerHeading">
+                        <h2>Unsere Bestseller</h2>
+                    </div>
+                    <div class="crossSellerItem" id="morethumb1">
+                        <div class="crossSellerItemImgContainer">
+                            <a href="#" target="_blank"
+                                ><img
+                                    src="https://i.ebayimg.com/images/g/mQMAAOSwlK5jdOJd/s-l1600.png"
+                            /></a>
+                        </div>
+                        <h3>
+                            <span
+                                >G-BS001 Grillplatte Steak Tisch elektrischer
+                                Grill Grillfunktion Ölfiltersystem
+                            </span>
+                        </h3>
+                        <p><span>EUR 59,00</span></p>
+                    </div>
+                    <div class="crossSellerItem" id="morethumb2">
+                        <div class="crossSellerItemImgContainer">
+                            <a href="#" target="_blank"
+                                ><img
+                                    src="https://i.ebayimg.com/images/g/WZQAAOSwRltjTsi8/s-l1600.jpg"
+                            /></a>
+                        </div>
+                        <h3>
+                            <span
+                                >Samsung Galaxy Buds Pro Phantom Black schwarz
+                                Ohrhörer Kopfhörer In-Ear
+                            </span>
+                        </h3>
+                        <p><span>EUR 99,00</span></p>
+                    </div>
+                    <div class="crossSellerItem" id="morethumb3">
+                        <div class="crossSellerItemImgContainer">
+                            <a href="#" target="_blank"
+                                ><img
+                                    src="https://i.ebayimg.com/images/g/mQMAAOSwlK5jdOJd/s-l1600.png"
+                            /></a>
+                        </div>
+                        <h3>
+                            <span
+                                >G-BS001 Grillplatte Steak Tisch elektrischer
+                                Grill Grillfunktion Ölfiltersystem
+                            </span>
+                        </h3>
+                        <p><span>EUR 59,00</span></p>
+                    </div>
+                    <div class="crossSellerItem" id="morethumb4">
+                        <div class="crossSellerItemImgContainer">
+                            <a href="#" target="_blank"
+                                ><img
+                                    src="https://i.ebayimg.com/images/g/WZQAAOSwRltjTsi8/s-l1600.jpg"
+                            /></a>
+                        </div>
+                        <h3>
+                            <span
+                                >Samsung Galaxy Buds Pro Phantom Black schwarz
+                                Ohrhörer Kopfhörer In-Ear
+                            </span>
+                        </h3>
+                        <p><span>EUR 99,00</span></p>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="footerContainer">
+                    <div class="footerColumn">
+                        <h1>Adresse</h1>
+                        <p>Ihre Adresse hier</p>
+                        <br />
+                        <p>+000 00 00 00 00</p>
+                    </div>
+                    <div class="footerColumn">
+                        <h1>Folgen Sie uns</h1>
+                        <div class="socialContainer">
+                            <div class="footerRow">
+                                <i
+                                    class="fa fa-linkedin"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                            <div class="footerRow">
+                                <i
+                                    class="fa fa-facebook"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                            <div class="footerRow">
+                                <i
+                                    class="fa fa-twitter-square"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                            <div class="footerRow">
+                                <i
+                                    class="fa fa-instagram"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerColumn">
+                        <h1>Weitere Angebote</h1>
+                        <p>
+                            Viele weitere Angebote finden Sie in unserem
+                            <a
+                                href="https://www.ebay.de/str/shobbepfalz"
+                                target="_blank"
+                                >eBay Shop</a
+                            >
+                            oder erhalten Neuheiten und Aktionen in dem Sie uns
+                            <a
+                                href="https://my.ebay.de/ws/eBayISAPI.dll?AcceptSavedSeller&amp;sellerid=projexbusinessgmbh&amp;ssPageName=STRK:MEFS:ADDSTR&amp;rt=nc"
+                                class="ps-ebay-newsletter-link"
+                                target="_blank"
+                                >Folgen</a
+                            >.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
